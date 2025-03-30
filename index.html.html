@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, Leslie!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Amatic+SC&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #87CEEB, #FFB6C1);
+            font-family: 'Lobster', cursive;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 4rem;
+            color: #ff69b4;
+            margin-top: 50px;
+        }
+
+        .section {
+            margin: 30px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 16px;
+            padding: 16px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .message-secret {
+            display: none;
+            margin-top: 10px;
+            font-size: 1.2rem;
+            background-color: rgba(255, 99, 71, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .message-secret:hover {
+            background-color: rgba(255, 99, 71, 1);
+        }
+
+        .letter {
+            font-family: 'Amatic SC', cursive;
+            font-size: 1.8rem;
+            line-height: 1.8;
+            text-align: justify;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        iframe {
+            margin-top: 30px;
+            border: none;
+            width: 80%;
+            height: 400px;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-out;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¡Feliz Cumpleaños, Leslie!</h1>
+
+    <div class="section fade-in">
+        <p class="letter">
+            Querida Leslie, <br><br>
+
+            Hoy celebro tu vida, esa personita que cada día ilumina mi vida. Eres un solecito que llena de luz todos los rincones de mi corazón. Estoy tan agradecido por todas las experiencias, aprendizajes y vivencias que hemos compartido. Cada momento a tu lado es un regalo que atesoro profundamente. <br><br>
+
+            Ver todo lo que has logrado y cómo creces cada día me llena de orgullo. No solo eres fuerte y valiente, sino también una gran inspiración para mí. Estoy tan orgulloso de la persona tan hermosa, inteligente y llena de alegría que eres. No hay palabras suficientes para expresar lo que siento, pero quiero que sepas que cada día me siento más afortunado de tenerte a mi lado. <br><br>
+
+            En este día tan especial, mi único deseo es que siempre sigas brillando, que cada sueño que tengas se haga realidad, y que nuestra historia siga siendo tan hermosa como hasta ahora. Gracias por ser mi compañera, mi amiga, mi confidente y mi amor. ¡Te amo con todo mi corazón! <br><br>
+
+            Feliz cumpleaños, mi vida, y que este año te traiga aún más momentos felices, risas y sueños cumplidos. Te mereces lo mejor del mundo. <br><br>
+
+            Con todo mi amor, <br>
+            Ismael
+        </p>
+    </div>
+
+    <div class="section fade-in">
+        <h2>Galería de Fotos</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="ruta_de_imagen1.jpg" alt="Foto 1">
+            </div>
+            <div class="gallery-item">
+                <img src="ruta_de_imagen2.jpg" alt="Foto 2">
+            </div>
+            <div class="gallery-item">
+                <img src="ruta_de_imagen3.jpg" alt="Foto 3">
+            </div>
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Mensajes Secretos</h2>
+        <div class="message-secret" onclick="alert('¡Eres mi todo! Te amo infinitamente.')">
+            ¡Haz clic aquí para un mensaje secreto!
+        </div>
+        <div class="message-secret" onclick="alert('Cada día a tu lado es un regalo. Gracias por todo.')">
+            ¡Haz clic aquí para otro mensaje secreto!
+        </div>
+        <div class="message-secret" onclick="alert('Tu sonrisa ilumina mis días. ¡Feliz cumpleaños!')">
+            ¡Haz clic aquí para otro mensaje secreto!
+        </div>
+        <div class="message-secret" onclick="alert('Estoy agradecido por cada momento contigo. Te adoro.')">
+            ¡Haz clic aquí para el último mensaje secreto!
+        </div>
+    </div>
+
+    <div class="section fade-in">
+        <h2>Video de Cumpleaños</h2>
+        <iframe src="https://www.youtube.com/embed/w_pZKxGWa20?feature=shared" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://drive.google.com/uc?id=18SIXw596gCZHODLAeKhRUCQaq3pX7ZfQ" type="audio/mp3">
+        Tu navegador no soporta el audio.
+    </audio>
+
+</body>
+</html>
