@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños, Leslie!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Música de fondo -->
+    <audio autoplay loop>
+        <source src="musica.mp3" type="audio/mp3">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <!-- Portada -->
+    <div class="portada">
+        <h1>¡Feliz Cumpleaños, Leslie! 🎉</h1>
+        <p>Con mucho amor, Ismael ❤️</p>
+    </div>
+
+    <!-- Carta Virtual -->
+    <section class="carta">
+        <h2>Carta para ti ✨</h2>
+        <p class="carta-texto">
+            “Querida Leslie... <br>
+            Hoy celebro tu vida, esa personita que cada día ilumina mi vida. Eres un solecito que llena de luz todos los rincones de mi corazón...<br>
+            Estoy tan agradecido por todas las experiencias, aprendizajes y vivencias que hemos compartido. Cada momento a tu lado es un regalo que atesoro profundamente.<br>
+            En este día tan especial, mi único deseo es que siempre sigas brillando, que cada sueño que tengas se haga realidad. ¡Te amo con todo mi corazón! ❤️”
+        </p>
+    </section>
+
+    <!-- Video Especial -->
+    <section class="video">
+        <h2>🎥 Un Mensaje para Ti</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w_pZKxGWa20?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Galería de Fotos -->
+    <section class="galeria">
+        <h2>📸 Nuestros Momentos</h2>
+        <div class="imagenes">
+            <img src="images/foto1.jpg" alt="Foto 1">
+            <img src="images/foto2.jpg" alt="Foto 2">
+            <img src="images/foto3.jpg" alt="Foto 3">
+        </div>
+    </section>
+
+    <!-- Mensajes Secretos -->
+    <section class="mensajes-secretos">
+        <h2>🔐 Mensajes Secretos</h2>
+        <button onclick="mostrarMensaje(1)">Mensaje 1</button>
+        <button onclick="mostrarMensaje(2)">Mensaje 2</button>
+        <button onclick="mostrarMensaje(3)">Mensaje 3</button>
+        <button onclick="mostrarMensaje(4)">Mensaje 4</button>
+        <p id="mensaje-secreto"></p>
+    </section>
+
+    <script>
+        function mostrarMensaje(numero) {
+            let mensajes = [
+                "💌 Mensaje 1: Eres la persona más especial en mi vida. ❤️",
+                "💌 Mensaje 2: Cada día a tu lado es una bendición. ✨",
+                "💌 Mensaje 3: Eres mi felicidad y mi amor infinito. 💕",
+                "💌 Mensaje 4: Gracias por existir. ¡Te amo! 🌸"
+            ];
+            document.getElementById("mensaje-secreto").innerText = mensajes[numero - 1];
+        }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(to right, #87CEEB, #FFB6C1);
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff1493;
+}
+
+.portada {
+    padding: 50px;
+}
+
+.carta {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.video iframe {
+    border-radius: 10px;
+}
+
+.galeria img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff1493;
+}
